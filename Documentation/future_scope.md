@@ -6,7 +6,7 @@ The proposed system provides a foundation for developing an AI-driven environmen
 
 
 
-&#x20;**1. Real-World Drone Dataset:**
+&#x20;**1. Real-World Drone Dataset :**
 
 
 
