@@ -1,110 +1,136 @@
-# AI-Driven Drone-Based System for Real-Time Air Quality Mapping and Pollution Detection
+# iitt-model
 
-## National AI/ML Hackathon – Geospatial Intelligence Challenge
+# 🧠 AI Model Training Project – Step-by-Step Implementation
 
-### Overview
+## 📌 Objective
 
-This project presents a proposed AI-driven drone-based system for real-time air quality mapping and pollution detection using aerial imagery, computer vision, deep learning, and geospatial intelligence.
+To build, train, and save a machine learning model using Python and TensorFlow, and generate a `.h5` file.
 
-The proposed solution aims to identify environmental features such as roads, buildings, vegetation, water bodies, and industrial areas from aerial images and use these features as indicators of potential pollution-prone regions.
+---
 
-## Problem Statement
+## 🛠️ Tools Used
 
-Conventional air quality monitoring systems mainly depend on fixed sensors. These systems can be expensive, sparsely distributed, and may not effectively capture spatial variations in pollution.
+* Python
+* TensorFlow
+* NumPy
 
-The proposed approach explores the use of drone-based aerial imagery and AI to provide wider spatial environmental intelligence.
+---
 
-## Proposed Solution
+## 📊 Dataset Used
 
-The proposed system follows this workflow:
+The MNIST dataset (handwritten digit images) was used. It contains labeled images from 0–9 for training and testing.
 
-Drone Data Collection
-        ↓
-Image Preprocessing
-        ↓
-AI-Based Feature Extraction
-        ↓
-Environmental Feature Classification
-        ↓
-Pollution Indicator Mapping
-        ↓
-GIS / Dashboard Visualization
+---
 
-## Technology Stack
+# 🚀 Step-by-Step Process
 
-- Python
-- TensorFlow
-- Keras
-- OpenCV
-- NumPy
-- CNN
-- GIS / Geospatial Mapping
-- Dashboard Visualization
+## 🔹 Step 1: Environment Setup
 
-## Key Features
+Installed required libraries using:
 
-- Drone-based aerial image analysis
-- Environmental feature extraction
-- AI-based image classification
-- Pollution-prone area identification
-- Geospatial pollution mapping
-- Interactive visualization
-- Future integration with weather, traffic and satellite data
+```bash
+pip install tensorflow
+```
 
-## Innovation
+---
 
-The proposed system explores visual and spatial intelligence as a complementary approach to conventional sensor-based monitoring.
+## 🔹 Step 2: Importing Libraries
 
-It is designed to be scalable and adaptable for urban areas, rural regions and industrial zones.
+Imported necessary libraries such as TensorFlow and NumPy to build and train the model.
 
-## Expected Impact
+---
 
-The proposed solution could support:
+## 🔹 Step 3: Loading the Dataset
 
-- Identification of pollution hotspots
-- Smarter environmental monitoring
-- Data-driven decision making
-- Targeted pollution control measures
-- Improved spatial understanding of environmental conditions
+Loaded the MNIST dataset using TensorFlow:
 
-## Project Status
+* Training data
+* Testing data
 
-This repository documents the proposed solution developed for the National AI/ML Hackathon.
+---
 
-The system is currently at the proposal stage and has not been presented as a fully implemented production system.
+## 🔹 Step 4: Data Preprocessing
 
-## Future Scope
+* Normalized pixel values from 0–255 to 0–1
+* This improves model performance and training speed
 
-- Collection of real-world drone datasets
-- Training and evaluation of deep learning models
-- Integration with GIS platforms
-- Real-time data processing
-- Weather and traffic data integration
-- Satellite data integration
-- Cloud deployment
-- Interactive environmental monitoring dashboard
+---
 
-## Team
+## 🔹 Step 5: Building the Model
 
-- Dammalapati Narender
-- Malempati Harshitha
-- Lakshmi Bhuvana Durvasula
-- Medavarapu Suvyaktha
-- Kuntamukkala Lakeshini Sree
+Created a neural network using:
 
-## Hackathon
+* Flatten layer (input layer)
+* Dense layer (hidden layer with ReLU activation)
+* Output layer (Softmax for classification)
 
-National AI/ML Hackathon – Geospatial Intelligence Challenge
+---
 
-Ministry of Panchayati Raj  
-NIC Geospatial Division  
-Geo-Intel Lab, IITTNiF  
-IIT Tirupati
+## 🔹 Step 6: Compiling the Model
 
-## Repository Contents
+Configured the model using:
 
-- Project proposal
-- System architecture
-- Methodology
-- Presentation
-- Supporting documentation
+* Optimizer: Adam
+* Loss Function: Sparse Categorical Crossentropy
+* Metric: Accuracy
+
+---
+
+## 🔹 Step 7: Training the Model
+
+Trained the model using training data:
+
+```bash
+model.fit(x_train, y_train, epochs=5)
+```
+
+---
+
+## 🔹 Step 8: Evaluating the Model
+
+Tested the model using test data:
+
+```bash
+model.evaluate(x_test, y_test)
+```
+
+Accuracy of the model was displayed.
+
+---
+
+## 🔹 Step 9: Saving the Model
+
+Saved the trained model in `.h5` format:
+
+```bash
+model.save("trained_model.h5")
+```
+
+---
+
+## 🔹 Step 10: Running the Program
+
+Executed the program using:
+
+```bash
+python model.py
+```
+
+---
+
+## 📁 Output
+
+* Trained model file: `trained_model.h5`
+* Accuracy score displayed in terminal
+
+---
+
+## 📌 Conclusion
+
+The model was successfully built, trained, evaluated, and saved. This workflow demonstrates how AI models can be developed and can be extended to real-world applications such as image-based feature extraction.
+
+---
+
+## 👩‍💻 Author
+
+Lakshmi Bhuvana Durvasula
