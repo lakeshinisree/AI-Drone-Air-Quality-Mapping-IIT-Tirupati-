@@ -1,4 +1,4 @@
-# iitt-model
+# IIT TIRUPATHI-model
 
 # 🧠 AI Model Training Project – Step-by-Step Implementation
 
